@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Desenvolvimento de Sistemas</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 0;
+            line-height: 1.7;
+            font-family: sans-serif, serif;
+            margin: 0;
+        }
+        
+        .banner-titulo {
+            background-color: #cccaca;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+        }
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .banner-titulo h4 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        .conteudo-principal {
+            max-width: 100;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+            text-align: center;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 20px;
+            margin: 25px 0 12px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        
+        .img-bloco {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        .img-bloco img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+        
+        .aplicacoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .aplicacao-item {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 3px solid #2563eb;
+            text-align: center;
+        }
+        .aplicacao-item h4 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .aplicacao-item p {
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .destaque {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .destaque h3 {
+            color: #b45309;
+            margin-top: 0;
+        }
+        footer { 
+            background-color: #cccaca; 
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+            color: #333;
+        }
+        .conteudo-principal ul {
+            list-style-position: inside;
+            text-align: center;
+            padding-left: 0;
+        }
+        .conteudo-principal ul li {
+            margin: 8px 0;
+        }
+    .btn-voltar { 
+      display: block; 
+      width: fit-content; 
+      margin: 30px auto; 
+      padding: 10px 25px; 
+      font-size: 1.1rem; 
+      border: 2px solid #f95353; 
+      background: transparent; 
+      color: #fe0101; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      transition: all 0.3s; }
+
+    .btn-voltar:hover { 
+      background: #e65656; 
+      color: white; 
+      text-decoration: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="logo" width="300">
+      </a>
+    
+
+      <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#nav1">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+ <div class="navbar-collapse" id="nav1">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </li>
+  
+    <li class="nav-item">
+    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+   </li>
+  </ul>
+ </div>
+    </nav>
+    
+    <div class="banner-titulo">
+        <h1>Projetos de Desenvolvimento de Sistemas</h1>
+        <h4>Análise, planejamento e construção de soluções computacionais</h4>
+    </div>
+    
+    <div class="conteudo-principal">
+        <h2>O que é Desenvolvimento de Sistemas?</h2>
+        <p>Desenvolvimento de sistemas é o processo completo de criação de soluções computacionais, desde o levantamento das necessidades do usuário até a entrega e manutenção do software. Não se trata apenas de escrever código, mas de entender problemas, planejar soluções, projetar estruturas, implementar funcionalidades e testar a qualidade do sistema. Um projeto de desenvolvimento de sistemas envolve etapas organizadas que garantem que o produto final atenda às expectativas e funcione corretamente.</p>
+        
+        <div class="img-bloco">
+            <img src="sistemas.jpg" alt="Desenvolvimento de Sistemas">
+        </div>
+
+        <p>Cada sistema é projetado para resolver uma necessidade específica, seja automatizar processos, gerenciar informações ou facilitar tarefas do dia a dia. O desenvolvimento exige organização, trabalho em equipe e aplicação de metodologias que guiam cada etapa do projeto.</p>
+
+        <h2>Etapas de um Projeto</h2>
+        <p>Todo projeto de desenvolvimento segue um fluxo organizado, com as seguintes fases principais:</p>
+        <ul>
+            <li><strong>Análise de Requisitos:</strong> Entender o que o sistema precisa fazer, quais funcionalidades são essenciais e quais problemas serão resolvidos.</li>
+            <li><strong>Projeto:</strong> Definir a estrutura do sistema, desenhar a interface, planejar o banco de dados e escolher as tecnologias.</li>
+            <li><strong>Implementação:</strong> Escrever o código, construir as funcionalidades e integrar os componentes do sistema.</li>
+            <li><strong>Testes:</strong> Verificar se tudo funciona corretamente, identificar erros e corrigir falhas antes da entrega final.</li>
+            <li><strong>Implantação e Manutenção:</strong> Disponibilizar o sistema para os usuários e realizar ajustes e atualizações ao longo do tempo.</li>
+        </ul>
+
+        <div class="img-bloco">
+            <img src="etapas.jpg" alt="Etapas do Desenvolvimento">
+        </div>
+
+        <h2>Metodologias de Desenvolvimento</h2>
+        <p>Existem diferentes formas de organizar o trabalho de um projeto, cada uma adaptada ao tipo de sistema e à equipe envolvida:</p>
+
+        <div class="aplicacoes">
+            <div class="aplicacao-item">
+                <h4>Tradicional / Cascata</h4>
+                <p>Cada etapa é concluída antes de iniciar a próxima, com planejamento detalhado desde o início.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Ágil</h4>
+                <p>Desenvolvimento em ciclos curtos, com entregas parciais e ajustes constantes conforme o projeto evolui.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Prototipagem</h4>
+                <p>Criação de versões preliminares para testar ideias e coletar feedback antes do sistema final.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Incremental</h4>
+                <p>O sistema é construído por partes, adicionando funcionalidades gradualmente a cada versão.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Documentação</h4>
+                <p>Registro de todas as etapas, decisões, códigos e manuais para facilitar manutenção e compreensão do sistema.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Trabalho em Equipe</h4>
+                <p>Divisão de tarefas entre analistas, programadores, designers e testadores para otimizar o resultado final.</p>
+            </div>
+        </div>
+
+        <div class="img-bloco">
+            <img src="equipe.jpg" alt="Equipe Desenvolvendo Sistemas">
+        </div>
+
+        <div class="destaque">
+            <h3>Por que estudar Projetos de Desenvolvimento de Sistemas?</h3>
+            <p>Esta é uma das áreas mais amplas e valorizadas da tecnologia! Toda empresa precisa de sistemas para funcionar, e o profissional capaz de projetar, desenvolver e manter essas soluções é muito procurado. O conhecimento vai além da programação: ensina a pensar de forma crítica, a resolver problemas reais e a trabalhar em equipe. É uma área com enorme possibilidade de crescimento e atuação em diferentes segmentos do mercado.</p>
+        </div>
+
+        <h2>No Curso Técnico</h2>
+        <p style="text-align: center;">Na ETEC, a disciplina de Projetos de Desenvolvimento de Sistemas aborda os seguintes temas:</p>
+        <ul>
+            <li>Identificar e analisar necessidades de usuários e definir requisitos do sistema;</li>
+            <li>Escolher metodologias adequadas e planejar o cronograma e as etapas do projeto;</li>
+            <li>Projetar a interface, o banco de dados e a arquitetura do sistema;</li>
+            <li>Implementar, testar e corrigir o sistema garantindo qualidade e segurança;</li>
+            <li>Elaborar documentação técnica e manual do usuário, além de apresentar o projeto final.</li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="btn-voltar">Voltar ao inicio</a>
+
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">ETEC de Itanhaém — Centro Paula Souza</p>
+        <p style="margin-bottom: 8px;">Av. José Batista Campos, 1431 — Anchieta, Itanhaém/SP</p>
+        <p>&copy; 2026 ETEC Itanhaém. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

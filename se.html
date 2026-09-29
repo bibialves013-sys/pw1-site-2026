@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Embarcados</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 0;
+            line-height: 1.7;
+            font-family: sans-serif, serif;
+            margin: 0;
+        }
+        
+        .banner-titulo {
+            background-color: #cccaca;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+        }
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .banner-titulo h4 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        .conteudo-principal {
+            max-width: 100;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 20px;
+            margin: 25px 0 12px;
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        
+        .img-bloco {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        .img-bloco img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .img-bloco .legenda {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        .aplicacoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .aplicacao-item {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 3px solid #2563eb;
+        }
+        .aplicacao-item h4 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .aplicacao-item p {
+            font-size: 14px;
+            margin: 0;
+            text-align: left;
+        }
+        
+        .destaque {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        .destaque h3 {
+            color: #b45309;
+            margin-top: 0;
+        }
+
+footer { 
+      background-color: #cccaca; 
+      padding: 30px; 
+      text-align: center; 
+      margin-top: 50px;
+    }
+
+footer p{
+    text-align: center;
+}
+
+.btn-voltar { 
+      display: block; 
+      width: fit-content; 
+      margin: 30px auto; 
+      padding: 10px 25px; 
+      font-size: 1.1rem; 
+      border: 2px solid #f95353; 
+      background: transparent; 
+      color: #fe0101; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      transition: all 0.3s; }
+
+    .btn-voltar:hover { 
+      background: #e65656; 
+      color: white; 
+      text-decoration: none; }
+
+
+ </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="logo" width="300">
+      </a>
+    
+
+      <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#nav1">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+ <div class="navbar-collapse" id="nav1">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </li>
+
+    <li class="nav-item">
+      <a href="cursos.html" class="nav-link">Curso</a>
+    </li>
+  
+    <li class="nav-item">
+    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+   </li>
+  </ul>
+ </div>
+    </nav>
+    
+    <div class="banner-titulo">
+        <h1> Sistemas Embarcados</h1>
+        <h4>O que são, como funcionam e onde estão presentes?</h4>
+    </div>
+
+    
+    <div class="conteudo-principal">
+        <h2>O que são Sistemas Embarcados?</h2>
+        <p><strong>Sistema embarcado</strong> é um computador completo projetado para executar uma função ou tarefa específica, dentro de um sistema maior. Diferente de um computador comum, ele é dedicado a um propósito único e costuma operar de forma autônoma, sem intervenção humana constante.</p>
+        
+        
+        <div class="img-bloco">
+            <img src="arduino.jpg" width="350px" alt="Placa Arduino Uno">
+        </div>
+
+        <p>Ele é composto por hardware (microcontroladores, sensores, circuitos) e software (programação) integrados. Por isso, é compacto, eficiente e consome pouca energia.</p>
+
+        <h2>Componentes Principais</h2>
+        <p>Todo sistema embarcado possui elementos fundamentais:</p>
+        <ul>
+            <li><strong>Microcontrolador / Microprocessador:</strong> É o "cérebro" — processa dados e executa os programas.</li>
+            <li><strong>Memória:</strong> Armazena o programa e os dados temporários.</li>
+            <li><strong>Entradas e Saídas:</strong> Conectam sensores (entrada) e atuadores (saída).</li>
+            <li><strong>Sensores:</strong> Captam informações do ambiente (temperatura, luz, movimento, etc.).</li>
+            <li><strong>Fonte de alimentação:</strong> Bateria ou energia elétrica para funcionar.</li>
+        </ul>
+
+        
+        <div class="img-bloco">
+            <img src="micro.jpg"  width="350px" alt="Microcontrolador PIC">
+            
+        </div>
+
+        <h2>Onde estão presentes?</h2>
+        <p>Quase todos os dispositivos eletrônicos modernos contêm sistemas embarcados. Veja os principais exemplos:</p>
+
+        <div class="aplicacoes">
+            <div class="aplicacao-item">
+                <h4> Eletrodomésticos</h4>
+                <p>Máquinas de lavar, micro-ondas, geladeiras e fornos possuem controle digital baseado em sistemas embarcados.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4> Automóveis</h4>
+                <p>Sistemas de freio ABS, injeção eletrônica, airbags e painéis digitais são todos controlados por sistemas embarcados.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4> Dispositivos Inteligentes</h4>
+                <p>Relógios digitais, alarmes, câmeras de segurança e lâmpadas inteligentes dependem de sistemas embarcados.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4> Área da Saúde</h4>
+                <p>Aparelhos como monitores cardíacos, bombas de infusão e equipamentos de diagnóstico usam essa tecnologia.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Tecnologia Industrial</h4>
+                <p>Robôs, sensores de fábricas e controladores de máquinas operam com sistemas embarcados em tempo real.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4> Aeroespacial</h4>
+                <p>Satélites, foguetes e drones dependem de sistemas embarcados para navegação e controle preciso.</p>
+            </div>
+        </div>
+
+        
+        <div class="img-bloco">
+            <img src="rasp.jpg" width="350px" alt="Raspberry Pi ">
+            
+        </div>
+
+        <div class="destaque">
+            <h3>Por que estudar Sistemas Embarcados?</h3>
+            <p>Esta é uma das áreas mais promissoras da tecnologia! Com o crescimento da <strong>Internet das Coisas (IoT)</strong>, cada vez mais objetos se conectam e precisam de inteligência interna. Profissionais que dominam programação de microcontroladores, eletrônica e integração de hardware e software são muito procurados no mercado de trabalho.</p>
+        </div>
+
+        <h2>No Curso Técnico</h2>
+        <p>Na ETEC, a matéria de Sistemas Embarcados faz parte da base tecnológica do curso. O aluno aprende na prática a:</p>
+        <ul>
+            <li>Identificar e utilizar componentes eletrônicos;</li>
+            <li>Programar microcontroladores (linguagens como C, C++ e Assembly);</li>
+            <li>Desenvolver projetos com sensores e atuadores;</li>
+            <li>Integrar hardware e software para soluções reais;</li>
+            <li>Testar, corrigir e otimizar sistemas.</li>
+        </ul>
+    </div>
+        <a href="index.html" class="btn-voltar">← Voltar para Início</a>
+
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500;">ETEC de Itanhaém — Centro Paula Souza</p>
+    <p>Av. José Batista Campos , 1431 — Anchieta, Itanhaém/SP</p>
+    <p>&copy; 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computação em Nuvem</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 0;
+            line-height: 1.7;
+            font-family: sans-serif, serif;
+            margin: 0;
+        }
+        
+        .banner-titulo {
+            background-color: #cccaca;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+        }
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .banner-titulo h4 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        .conteudo-principal {
+            max-width: 100;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+            text-align: center;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 20px;
+            margin: 25px 0 12px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        
+        .img-bloco {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        .img-bloco img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .img-bloco .legenda {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        .aplicacoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .aplicacao-item {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 3px solid #2563eb;
+            text-align: center;
+        }
+        .aplicacao-item h4 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .aplicacao-item p {
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .destaque {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .destaque h3 {
+            color: #b45309;
+            margin-top: 0;
+        }
+        footer { 
+            background-color: #cccaca; 
+            padding: 25px 20px; 
+            text-align: center ; 
+            margin-top: 40px;
+            margin-left: auto ;
+            margin-right: auto;
+            max-width: 100;
+            border: none;
+            border-radius: 0;
+        }
+        footer p{
+            text-align: center;
+            margin: 5px 0 ;
+            color: #333;
+        }
+        .conteudo-principal ul {
+            list-style-position: inside;
+            text-align: center;
+            padding-left: 0;
+        }
+        .conteudo-principal ul li {
+            margin: 8px 0;
+        }
+ .btn-voltar { 
+      display: block; 
+      width: fit-content; 
+      margin: 30px auto; 
+      padding: 10px 25px; 
+      font-size: 1.1rem; 
+      border: 2px solid #f95353; 
+      background: transparent; 
+      color: #fe0101; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      transition: all 0.3s; }
+
+    .btn-voltar:hover { 
+      background: #e65656; 
+      color: white; 
+      text-decoration: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="logo" width="300">
+      </a>
+    
+
+      <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#nav1">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+ <div class="navbar-collapse" id="nav1">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </li>
+  
+    <li class="nav-item">
+    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+   </li>
+  </ul>
+ </div>
+    </nav>
+    
+    <div class="banner-titulo">
+        <h1>Computação em Nuvem</h1>
+        <h4>Armazenamento e acesso a dados e serviços pela internet</h4>
+    </div>
+    
+    <div class="conteudo-principal">
+        <h2>O que é Computação em Nuvem?</h2>
+        <p>A <strong>computação em nuvem</strong> é uma tecnologia que permite acessar e armazenar dados, aplicativos e serviços de computação pela internet, em servidores remotos, em vez de usar apenas o disco rígido ou os recursos do seu próprio computador. A "nuvem" representa a rede de servidores espalhados pelo mundo, que trabalham de forma conectada para fornecer recursos tecnológicos a qualquer hora e de qualquer lugar.</p>
+        
+        <div class="img-bloco">
+            <img src="nuvem.jpg" width="350px" alt="Computação em Nuvem">
+        
+        </div>
+
+        <p>Com ela, não é necessário ter um computador muito potente ou armazenamento físico enorme — tudo fica disponível online, e você acessa com apenas uma conexão de internet e um dispositivo.</p>
+
+        <h2>Principais Modelos de Serviço</h2>
+        <p>A nuvem oferece diferentes tipos de serviços, adaptados às necessidades de cada usuário ou empresa:</p>
+        <ul>
+            <li><strong>IaaS (Infraestrutura como Serviço):</strong> Aluguel de servidores, armazenamento e redes virtuais (ex: Amazon EC2, Microsoft Azure).</li>
+            <li><strong>PaaS (Plataforma como Serviço):</strong> Ambiente pronto para desenvolver e publicar aplicativos sem se preocupar com a infraestrutura.</li>
+            <li><strong>SaaS (Software como Serviço):</strong> Aplicativos acessados diretamente pelo navegador, sem instalação (ex: Gmail, Google Docs, Netflix).</li>
+            <li><strong>Armazenamento em Nuvem:</strong> Espaço virtual para salvar arquivos, fotos e documentos (ex: Google Drive, OneDrive, Dropbox).</li>
+            <li><strong>Nuvem Híbrida e Pública:</strong> Combinação de servidores próprios e públicos, equilibrando segurança e praticidade.</li>
+        </ul>
+
+        <div class="img-bloco">
+            <img src="servicos.jpg" width="350px" alt="Serviços de Nuvem">
+        </div>
+
+        <h2>Onde é usada no dia a dia?</h2>
+        <p>Você provavelmente já usa a nuvem todos os dias sem perceber! Veja os exemplos mais comuns:</p>
+
+        <div class="aplicacoes">
+            <div class="aplicacao-item">
+                <h4>E-mails e Mensagens</h4>
+                <p>Gmail, Outlook e WhatsApp guardam suas mensagens na nuvem, acessíveis de qualquer aparelho.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Arquivos e Fotos</h4>
+                <p>Salvar fotos no celular e ver no computador? Isso é a nuvem sincronizando seus arquivos.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Streaming de Vídeo</h4>
+                <p>Netflix, YouTube e Prime Video transmitem conteúdo diretamente de servidores na nuvem.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Trabalho Colaborativo</h4>
+                <p>Documentos compartilhados no Google Docs ou planilhas acessadas por várias pessoas ao mesmo tempo.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Empresas e Negócios</h4>
+                <p>Sistemas de gestão, bancos de dados e armazenamento de informações de toda a empresa.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Backup e Segurança</h4>
+                <p>Cópias automáticas dos arquivos, protegendo dados contra perda, roubo ou defeito no equipamento.</p>
+            </div>
+        </div>
+
+        <div class="img-bloco">
+            <img src="vantagens.jpg" width="350px" alt="Vantagens da Nuvem">
+            
+        </div>
+
+        <div class="destaque">
+            <h3>Por que estudar Computação em Nuvem?</h3>
+            <p>A nuvem é a tecnologia que está moldando o futuro da computação! Cada vez mais empresas estão migrando seus sistemas para a nuvem, e a demanda por profissionais qualificados é enorme. Saber como funciona, seus tipos, vantagens e cuidados é essencial para quem quer trabalhar com tecnologia. É uma das áreas mais promissoras e bem pagas do mercado!</p>
+        </div>
+
+        <h2>No Curso Técnico</h2>
+        <p style="text-align: center;">Na ETEC, a disciplina de Computação em Nuvem aborda os seguintes temas:</p>
+        <ul>
+            <li>Conceitos fundamentais: o que é, história e evolução da computação em nuvem;</li>
+            <li>Modelos de implantação: nuvem pública, privada, híbrida e comunitária;</li>
+            <li>Modelos de serviço: IaaS, PaaS e SaaS — diferenças e exemplos práticos;</li>
+            <li>Vantagens e desafios: custo, escalabilidade, segurança e privacidade de dados;</li>
+            <li>Uso de plataformas reais: criação de contas, armazenamento e compartilhamento de arquivos na nuvem.</li>
+        </ul>
+    </div>
+    <a href="index.html" class="btn-voltar">Voltar ao inicio</a>
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">ETEC de Itanhaém — Centro Paula Souza</p>
+        <p style="margin-bottom: 8px;">Av. José Batista Campos, 1431 — Anchieta, Itanhaém/SP</p>
+        <p>&copy; 2026 ETEC Itanhaém. </p>
+    </footer>
+
+</body>
+</html>

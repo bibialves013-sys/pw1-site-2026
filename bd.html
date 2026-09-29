@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 0;
+            line-height: 1.7;
+            font-family: sans-serif, serif;
+            margin: 0;
+        }
+        
+        .banner-titulo {
+            background-color: #cccaca;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+        }
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .banner-titulo h4 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        .conteudo-principal {
+            max-width: 100;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+            text-align: center;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 20px;
+            margin: 25px 0 12px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        
+        .img-bloco {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        .img-bloco img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .img-bloco .legenda {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        .aplicacoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .aplicacao-item {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 3px solid #2563eb;
+            text-align: center;
+        }
+        .aplicacao-item h4 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .aplicacao-item p {
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .destaque {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .destaque h3 {
+            color: #b45309;
+            margin-top: 0;
+        }
+        footer { 
+            background-color: #cccaca; 
+            padding: 30px; 
+            text-align: center; 
+            margin-top: 30px;
+            max-width: 100;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0;
+        }
+        footer p{
+            text-align: center;
+            margin: 5px 0;
+        }
+        .conteudo-principal ul {
+            list-style-position: inside;
+            text-align: center;
+            padding-left: 0;
+        }
+        .conteudo-principal ul li {
+            margin: 8px 0;
+        }
+ .btn-voltar { 
+      display: block; 
+      width: fit-content; 
+      margin: 30px auto; 
+      padding: 10px 25px; 
+      font-size: 1.1rem; 
+      border: 2px solid #f95353; 
+      background: transparent; 
+      color: #fe0101; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      transition: all 0.3s; }
+
+    .btn-voltar:hover { 
+      background: #e65656; 
+      color: white; 
+      text-decoration: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="logo" width="300">
+      </a>
+    
+
+      <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#nav1">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+ <div class="navbar-collapse" id="nav1">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </li>
+  
+    <li class="nav-item">
+    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+   </li>
+  </ul>
+ </div>
+    </nav>
+    
+    <div class="banner-titulo">
+        <h1>Banco de Dados</h1>
+        <h4>Organização, armazenamento e gestão de informações</h4>
+    </div>
+    
+    <div class="conteudo-principal">
+        <h2>O que é Banco de Dados?</h2>
+        <p>Um <strong>banco de dados</strong> é uma coleção organizada de informações ou dados, armazenados de forma estruturada e sistemática, para que possam ser facilmente acessados, consultados, atualizados e gerenciados por meio de um sistema computacional. Ele funciona como um grande arquivo digital que centraliza informações e permite que vários usuários e sistemas trabalhem com os mesmos dados de forma segura e eficiente.</p>
+        
+        <div class="img-bloco">
+            <img src="banco.jpg" width="350px" alt="Banco de Dados">
+            
+
+        <p>Para gerenciar um banco de dados, usamos um software chamado <strong>SGBD — Sistema de Gerenciamento de Banco de Dados</strong>, que é responsável por controlar o acesso, a segurança, a integridade e a manipulação dos dados.</p>
+
+        <h2>Componentes Principais</h2>
+        <p>Todo banco de dados é formado por elementos fundamentais:</p>
+        <ul>
+            <li><strong>Dados:</strong> As informações brutas que serão armazenadas (nomes, códigos, valores, datas).</li>
+            <li><strong>Tabelas:</strong> Estruturas que organizam os dados em linhas e colunas, como uma planilha.</li>
+            <li><strong>SGBD:</strong> O software que gerencia o banco de dados (exemplos: MySQL, PostgreSQL, SQL Server, Oracle).</li>
+            <li><strong>SQL:</strong> A linguagem padrão usada para consultar, inserir, alterar e excluir dados.</li>
+            <li><strong>Usuários e Permissões:</strong> Controles de quem pode acessar e modificar as informações.</li>
+        </ul>
+
+        <div class="img-bloco">
+            <img src="sql.jpg" width="350px" alt="Linguagem SQL">
+            
+        </div>
+
+        <h2>Onde é usado?</h2>
+        <p>Praticamente todo sistema computacional usa banco de dados. Veja os principais exemplos:</p>
+
+        <div class="aplicacoes">
+            <div class="aplicacao-item">
+                <h4>Lojas e Comércio</h4>
+                <p>Cadastro de produtos, clientes, estoque e histórico de vendas.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Escolas e ETEC</h4>
+                <p>Matrículas, notas, frequência, cadastro de alunos e professores.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Bancos e Finanças</h4>
+                <p>Contas, transações, saldos, pagamentos e movimentações financeiras.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Redes Sociais</h4>
+                <p>Perfis, postagens, comentários, conexões e mensagens dos usuários.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Saúde</h4>
+                <p>Prontuários, agendamentos, receitas e histórico de pacientes.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Sistemas de Logística</h4>
+                <p>Controle de entregas, rotas, estoque e rastreamento de pedidos.</p>
+            </div>
+        </div>
+
+        <div class="img-bloco">
+            <img src="bd.jpg" width="350px" alt="Projeto de Banco de Dados">
+            
+        </div>
+
+        <div class="destaque">
+            <h3>Por que estudar Banco de Dados?</h3>
+            <p>O banco de dados é o coração de qualquer sistema de informação! Sem ele, não há como guardar nem consultar informações de forma organizada. Dominar essa área é essencial para quem trabalha com tecnologia. É uma das competências mais procuradas no mercado de trabalho — empresas de todos os ramos precisam de profissionais que saibam criar, gerenciar e consultar bancos de dados.</p>
+        </div>
+
+        <h2>No Curso Técnico</h2>
+        <p style="text-align: center;">Na ETEC, a disciplina de Banco de Dados ensina na prática a:</p>
+        <ul>
+            <li>Modelar e projetar bancos de dados (diagramas, tabelas e relacionamentos);</li>
+            <li>Usar a linguagem SQL para criar, consultar, alterar e excluir dados;</li>
+            <li>Garantir integridade, segurança e consistência das informações;</li>
+            <li>Criar consultas avançadas, junções entre tabelas e relatórios;</li>
+            <li>Utilizar SGBDs como MySQL, PostgreSQL ou SQL Server em projetos reais.</li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="btn-voltar">← Voltar para Início</a>
+
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500;">ETEC de Itanhaém — Centro Paula Souza</p>
+        <p>Av. José Batista Campos, 1431 — Anchieta, Itanhaém/SP</p>
+        <p>&copy; 2026 ETEC Itanhaém..</p>
+    </footer>
+
+</body>
+</html>

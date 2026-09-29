@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo Seletivo — ETEC Itanhaém</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 30px;
+            line-height: 1.7;
+            font-family: 'Merriweather', serif;
+        }
+
+        /* Banner cinza com título destacado FORA da caixa branca */
+        .banner-titulo {
+            background-color: #cccaca;
+            background-size: cover;
+            background-position: center;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 16px;
+            margin-bottom: -25px; /* Faz o banner se sobrepor levemente ao conteúdo abaixo */
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .banner-titulo h4 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+
+        /* Caixa de conteúdo principal */
+        .conteudo-principal {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+
+        .calendario {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 4px solid #2563eb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .calendario h3 {
+            color: #1d4ed8;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .calendario ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .calendario li {
+            color: #1e40af;
+            padding: 6px 0;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 24px;
+            background-color: #2563eb;
+            color: white !important;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #6b7280;
+        }
+
+        /* Ajuste da navegação */
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #2563eb !important;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="Logo ETEC Itanhaém" width="300" class="ms-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="seletivo.html" class="nav-link">Processo Seletivo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cursos.html" class="nav-link">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Título FORA da caixa branca, em destaque na faixa cinza -->
+    <div class="banner-titulo">
+        <h1>Processo Seletivo</h1>
+        <h4>Como funciona o processo seletivo da ETEC?</h4>
+    </div>
+
+    <!-- Conteúdo Principal dentro da caixa branca -->
+    <div class="conteudo-principal">
+        <h2>📋 Informações</h2>
+        <p><strong>Inscrição:</strong> A inscrição é feita de forma online no portal oficial, mediante o pagamento de uma taxa de inscrição (com a opção de pedido de redução em datas específicas para quem cumpre os requisitos).</p>
+        <p><strong>Prova de Seleção:</strong> Consiste em uma prova presencial de conhecimentos gerais do ensino fundamental.</p>
+        <p><strong>Sistema de Pontuação Acrescida:</strong> Oferece bônus na nota final de 3% para afrodescendentes e 10% para quem cursou o ensino fundamental integralmente em escolas públicas (não se acumulam os dois critérios).</p>
+
+        <h2>📝 Requisitos Básicos</h2>
+        <p><strong>Ensino Médio ou Integrado:</strong> O candidato deve ter concluído ou estar concluindo o ensino fundamental.</p>
+        <p><strong>Ensino Técnico:</strong> O candidato precisa ter concluído ou estar cursando a partir do 2º ano do ensino médio.</p>
+
+        <div class="calendario">
+            <h3>📅 Calendário Importante</h3>
+            <ul>
+                <li>• Inscrições: 02/09/2026 até 30/11/2026</li>
+                <li>• Prova: 07/12/2026</li>
+                <li>• Link do Portal Oficial da CPS: <a href="https://www.cps.sp.gov.br" target="_blank" style="color:#1d4ed8; text-decoration:underline;">clique aqui</a></li>
+            </ul>
+        </div>
+
+        <a href="https://www.cps.sp.gov.br" target="_blank" class="btn">Visitar Portal Oficial</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500;">ETEC de Itanhaém — Centro Paula Souza</p>
+        <p>Av. José Batista Campos, 1431 — Anchieta, Itanhaém/SP</p>
+        <p>&copy; 2026 Etec de Itanhaém.</p>
+    </footer>
+
+</body>
+</html>

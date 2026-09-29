@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação de Algoritmos</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding: 0;
+            line-height: 1.7;
+            font-family: sans-serif, serif;
+            margin: 0;
+        }
+        
+        .banner-titulo {
+            background-color: #cccaca;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+        }
+        .banner-titulo h1 {
+            color: #000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .banner-titulo h4 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        
+        .conteudo-principal {
+            max-width: 100;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 35px;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+            text-align: center;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 20px;
+            margin: 25px 0 12px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        p {
+            color: #374151;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        
+        .img-bloco {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+        .img-bloco img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+        
+        .aplicacoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .aplicacao-item {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 3px solid #2563eb;
+            text-align: center;
+        }
+        .aplicacao-item h4 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .aplicacao-item p {
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .destaque {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .destaque h3 {
+            color: #b45309;
+            margin-top: 0;
+        }
+        footer { 
+            background-color: #cccaca; 
+            padding: 25px 20px; 
+            text-align: center; 
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100;
+            border: none;
+            border-radius: 0;
+        }
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+            color: #333;
+        }
+        .conteudo-principal ul {
+            list-style-position: inside;
+            text-align: center;
+            padding-left: 0;
+        }
+        .conteudo-principal ul li {
+            margin: 8px 0;
+        }
+.btn-voltar { 
+      display: block; 
+      width: fit-content; 
+      margin: 30px auto; 
+      padding: 10px 25px; 
+      font-size: 1.1rem; 
+      border: 2px solid #f95353; 
+      background: transparent; 
+      color: #fe0101; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      transition: all 0.3s; }
+
+    .btn-voltar:hover { 
+      background: #e65656; 
+      color: white; 
+      text-decoration: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="etec_itanhaem2.png" alt="logo" width="300">
+      </a>
+    
+
+      <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#nav1">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+ <div class="navbar-collapse" id="nav1">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </li>
+  
+    <li class="nav-item">
+    <a href="sobre.html" class="nav-link">Saiba Mais</a>
+   </li>
+  </ul>
+ </div>
+    </nav>
+    
+    <div class="banner-titulo">
+        <h1>Programação de Algoritmos</h1>
+        <h4>Lógica de programação e resolução de problemas passo a passo</h4>
+    </div>
+    
+    <div class="conteudo-principal">
+        <h2>O que é um Algoritmo?</h2>
+        <p>Um algoritmo é uma sequência finita, ordenada e precisa de instruções ou passos lógicos para resolver um problema ou executar uma tarefa. É como uma receita ou um manual de instruções: cada passo deve ser seguido na ordem correta para chegar ao resultado esperado. Na computação, o algoritmo é a base de todo programa, pois define o que o computador deve fazer, em qual ordem e com quais dados.</p>
+        
+        <div class="img-bloco">
+            <img src="algoritmo.jpg" alt="Conceito de Algoritmo">
+        </div>
+
+        <p>Antes de escrever um código de computador, é preciso primeiro pensar e planejar o algoritmo. Sem uma lógica bem estruturada, mesmo que o código seja escrito, ele não funcionará corretamente.</p>
+
+        <h2>Conceitos Fundamentais</h2>
+        <p>Para construir um algoritmo eficiente, é necessário dominar alguns conceitos essenciais:</p>
+        <ul>
+            <li><strong>Entrada de Dados:</strong> Informações que o usuário fornece para o sistema processar.</li>
+            <li><strong>Processamento:</strong> Cálculos, comparações e manipulações feitas com os dados de entrada.</li>
+            <li><strong>Saída de Dados:</strong> O resultado final que é apresentado ao usuário após o processamento.</li>
+            <li><strong>Variáveis:</strong> Espaços reservados na memória para guardar valores que serão usados no algoritmo.</li>
+            <li><strong>Estruturas de Controle:</strong> Comandos que decidem quais passos executar conforme condições ou repetem ações.</li>
+        </ul>
+
+        <div class="img-bloco">
+            <img src="fluxograma.jpg" alt="Fluxograma de Algoritmo">
+        </div>
+
+        <h2>Estruturas Lógicas</h2>
+        <p>Os algoritmos são construídos usando estruturas básicas que controlam o fluxo de execução:</p>
+
+        <div class="aplicacoes">
+            <div class="aplicacao-item">
+                <h4>Sequência</h4>
+                <p>As instruções são executadas uma após a outra, na ordem em que aparecem, sem desvios.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Decisão</h4>
+                <p>Permite escolher entre dois ou mais caminhos de acordo com uma condição, como "se então senão".</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Repetição</h4>
+                <p>Comandos que permitem repetir um bloco de instruções enquanto uma condição for verdadeira.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Variáveis e Tipos</h4>
+                <p>Definição do tipo de dado: números inteiros, decimais, textos e valores lógicos.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Operadores</h4>
+                <p>Matemáticos, lógicos e relacionais para realizar cálculos e comparações entre valores.</p>
+            </div>
+            <div class="aplicacao-item">
+                <h4>Vetores e Matrizes</h4>
+                <p>Estruturas que permitem armazenar vários valores em uma única variável, organizados por índice.</p>
+            </div>
+        </div>
+
+        <div class="img-bloco">
+            <img src="programacao.jpg" alt="Ambiente de Programação">
+        </div>
+
+        <div class="destaque">
+            <h3>Por que estudar Programação de Algoritmos?</h3>
+            <p>Esta é a disciplina base de toda a computação! Aprender a pensar de forma lógica e estruturada é a habilidade mais importante para qualquer profissional de tecnologia. O raciocínio lógico desenvolvido aqui serve para todas as linguagens de programação e áreas do conhecimento. É a porta de entrada para o mundo da programação e um dos conhecimentos mais valorizados no mercado de trabalho.</p>
+        </div>
+
+        <h2>No Curso Técnico</h2>
+        <p style="text-align: center;">Na ETEC, a disciplina de Programação de Algoritmos desenvolve as seguintes competências:</p>
+        <ul>
+            <li>Desenvolver o raciocínio lógico para propor soluções para problemas;</li>
+            <li>Elaborar algoritmos usando fluxogramas e pseudocódigos;</li>
+            <li>Utilizar variáveis, constantes, operadores e estruturas de controle de forma correta;</li>
+            <li>Implementar, testar e corrigir algoritmos em linguagens de programação;</li>
+            <li>Desenvolver projetos aplicando vetores, matrizes e funções para organizar o código.</li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="btn-voltar">voltar ao inicio</a>
+
+    <footer>
+        <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">ETEC de Itanhaém — Centro Paula Souza</p>
+        <p style="margin-bottom: 8px;">Av. José Batista Campos, 1431 — Anchieta, Itanhaém/SP</p>
+        <p>&copy; 2026 ETEC Itanhaém.</p>
+    </footer>
+
+</body>
+</html>
